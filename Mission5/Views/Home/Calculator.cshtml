@@ -1,0 +1,29 @@
+
+
+@{
+    Layout = null;
+}
+<div>
+    <h1>Hours calculator</h1>
+    <h2>What to know how much we charge? Use the calculator below</h2>
+    
+    <form id="calform">
+        <label for="hours"> Hours Needed:</label><br />
+        <input type="number" id="hours" min="0" step="0.5"/><br /><br />
+        
+        <label for="rate">Rate Per Hour</label>
+        <input type="text" id="rate" value="25" readonly><br /><br />
+        
+        <button type="button" id="calculateBtn">Calculate total</button><br />
+        
+        <label for="total">Total Charge</label>
+        <input type="text" id="total" readonly/>
+    </form>
+    
+    <p id="errorMsg" style="color:red; display:none;">
+        Please enter a positive number of hours.
+    </p>
+</div>
+<script src="~/js/calculator.js"></script>
+
+
