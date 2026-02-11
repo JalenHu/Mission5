@@ -1,8 +1,6 @@
 
 
-@{
-    Layout = null;
-}
+
 <div>
     <h1>Hours calculator</h1>
     <h2>What to know how much we charge? Use the calculator below</h2>
@@ -23,7 +21,11 @@
     <p id="errorMsg" style="color:red; display:none;">
         Please enter a positive number of hours.
     </p>
+    
 </div>
-<script src="~/js/calculator.js"></script>
+
+@section Scripts {
+    <script src="~/js/calculator.js"></script>
+}
 
 
